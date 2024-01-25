@@ -1,0 +1,64 @@
+<style>
+	<!--导航栏-->
+	.navigator {
+		width: 100%;
+		max-width: 1260px;
+		min-width: 755px;
+		overflow: hidden;
+		display: none;
+	}
+	.navigator_fix:hover .navigator{
+		display: block;
+	}
+	.navText {
+		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+		text-transform: lowercase;
+		font-size: 1em;
+	}
+
+	ul {
+		list-style-type: none;
+		margin: 0;
+		text-align: center;
+		overflow: hidden;
+		background-color: rgb(126, 212, 212);
+	}
+	li {
+		display: inline;
+		float: right;
+	}
+	li a, .dropdownBtn {
+		display: block;
+		color: aliceblue;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+	}
+	li a:hover, .dropdown:hover{
+		background-color: rgb(132, 99, 209);
+	}
+
+	.dropdown {
+		display: inline;
+		float: right;
+	}
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: rgb(132, 99, 209);
+		min-width: 100px;
+	}
+	
+	.dropdown-content a {
+		color: aliceblue;
+		padding: 14px 16px;
+		text-transform: lowercase;
+		display: block;
+	}
+	.dropdown-content a:hover{
+		background-color: rgb(132, 99, 209);
+	}
+	.dropdown:hover .dropdown-content{
+		display: block;
+	}
+</style>
