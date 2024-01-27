@@ -1,92 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="utf-8">
 <title>SRH's Web</title>
 <style>
-	<!--导航栏-->
-	.navigator {
-		width: 100%;
-		max-width: 1260px;
-		min-width: 755px;
-		overflow: hidden;
-		display: none;
-	}
-	.navigator_fix:hover .navigator{
-		display: block;
-	}
-	.navText {
-		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-		text-transform: lowercase;
-		font-size: 1em;
-	}
-
-	ul {
-		list-style-type: none;
-		margin: 0;
-		text-align: center;
-		overflow: hidden;
-		background-color: rgb(126, 212, 212);
-	}
-	li {
-		display: inline;
-		float: right;
-	}
-	li a, .dropdownBtn {
-		display: block;
-		color: aliceblue;
-		text-align: center;
-		padding: 14px 16px;
-		text-decoration: none;
-	}
-	li a:hover, .dropdown:hover{
-		background-color: rgb(132, 99, 209);
-	}
-
-	.dropdown {
-		display: inline;
-		float: right;
-	}
-	.dropdown-content {
-		display: none;
-		position: absolute;
-		background-color: rgb(132, 99, 209);
-		min-width: 100px;
-	}
-	
-	.dropdown-content a {
-		color: aliceblue;
-		padding: 14px 16px;
-		text-transform: lowercase;
-		display: block;
-	}
-	.dropdown-content a:hover{
-		background-color: rgb(132, 99, 209);
-	}
-	.dropdown:hover .dropdown-content{
-		display: block;
-	}
+	@import "styles/styles.css";
 </style>
 </head>
 
 <body>
-
 <div class="navigator">
 	<div class="navText">
-	<ul>
-		<li><a href="jalview.html">jalview</a></li>
-		<li><a href="egs.html">egs</a></li>
-		<div class="dropdown">
-			<a class="dropdownBtn">homepages</a>
-			<div class="dropdown-content">
-				<a href="homepage.html">homepage</a>
-				<a href="homepage2.html">homepage2</a>
+		<ul>
+			<li><a href="jalview.html">jalview</a></li>
+			<li><a href="egs.html">egs</a></li>
+			<div class="dropdown">
+				<a class="dropdownBtn">homepages</a>
+				<div class="dropdown-content">
+					<a href="homepage.html">homepage</a>
+					<a href="homepage2.html">homepage2</a>
+				</div>
 			</div>
+		</ul>	
+	</div>
+</div>
+<div class="row">
+	<div class="imgleftcolumn">
+		<div class="card" id="FadeParachute" >
+			<img scr="parachute.png" alt="parachute">
 		</div>
-		
-	</ul>	
+	</div>
+	<div class="textleftcolumn">
+		<div class="card">
+			<h2>我的简历</h2>
+			<p>2022入学中科大</p>
+			<p>2023USTC iGEM</p>
+		</div>
+	</div>
+	<div class="textrightcolumn">
+		<div class="card">
+			<h2>我的项目</h2>
+			<p>暂无</p>
+		</div>
+	</div>
+	<div class="imgrightcolumn">
+		<div class="card">
+			<img scr="images/astronaut.png" alt="astronaut">
+		</div>
+	</div>
 </div>
-</div>
-
 </body>
 </html>

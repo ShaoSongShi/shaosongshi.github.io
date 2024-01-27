@@ -1,0 +1,118 @@
+/*排版*/
+.textleftcolumn {
+    float: left;
+    width: 60%;
+}
+.imgrightcolumn{
+    float: left;
+    width: 40%
+}
+.textrightcolumn {
+    float: left;
+    width: 60%;
+}
+.imgleftcolumn{
+    float: left;
+    width: 40%
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width: 600px) {
+    .textleftcolumn, .imgrightcolumn, .textrightcolumn, .imgleftcolumn{
+        width: 100%;
+    }  
+}
+.card, .animationBox {
+    background-color: rgba(159, 227, 227, 0.511);
+    width: 100%;
+    height: 400px;
+    padding: 14px 0px;
+    text-align: center;
+}
+.card img {
+    padding: 10px;
+    height: max-content;
+    width: max-content;
+}
+/*导航栏*/
+.navigator {
+    width: 100%;
+    max-width: 1260px;
+    min-width: 755px;
+    overflow: hidden;
+    display: block;
+}
+.navigator_fix:hover .navigator{
+    display: block;
+}
+.navText {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: lowercase;
+    font-size: 1em;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    text-align: center;
+    overflow: hidden;
+    background-color: rgb(126, 212, 212);
+}
+li {
+    display: inline;
+    float: right;
+}
+li a, .dropdownBtn {
+    display: block;
+    color: aliceblue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover, .dropdown:hover{
+    background-color: rgb(132, 99, 209);
+}
+
+.dropdown {
+    display: inline;
+    float: right;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(132, 99, 209);
+    min-width: 100px;
+}
+
+.dropdown-content a {
+    color: aliceblue;
+    padding: 14px 16px;
+    text-transform: lowercase;
+    display: block;
+}
+.dropdown-content a:hover{
+    background-color: rgb(132, 99, 209);
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+/* animation */
+/* @keyframes duration | easing-function | delay |
+iteration-count | direction | fill-mode | play-state | name */
+.animationBox {
+    animation:  2s linear 0s infinite alternate fade;
+}
+
+@keyframes fade {
+    form{
+        transition: translateX(-20vw);
+        filter: opacity(0);
+        }
+    to{
+        transition: translateX(0);
+        filter: opacity(100);
+    }
+}
